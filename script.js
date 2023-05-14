@@ -1,7 +1,6 @@
 // complete the given function
 
 function palindrome(str){
-	str=str.toLowercase();
 let arr=str.split("");
 let message = true;
 arr = arr.filter(function(e){
