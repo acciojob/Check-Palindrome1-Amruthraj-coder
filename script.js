@@ -2,7 +2,7 @@
 
 function palindrome(str){
 let arr=str.split("");
-let isapalindrome = true;
+let message = true;
 arr = arr.filter(function(e){
 	return e!=" ";
 })
@@ -10,11 +10,11 @@ arr = arr.filter(function(e){
 	let i=0,j=str.length-1;
   while(i<=j){
    if(str.charAt(i)!=str.charAt(j)){
-	   isapalindrome = false;
+	   message = false;
    }
 	  j--;
 	  i++;
   }
-	return isapalindrome;
+	return message;
 }
 module.exports = palindrome
