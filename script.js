@@ -2,20 +2,13 @@
 
 function palindrome(str){
 	str = str.toLowerCase();
-let arr=str.split("");
-let message = true;
-arr = arr.filter(function(e){
-	return e!=" ";
-})
-	str=arr.join("");
-	let i=0,j=str.length-1;
-  while(i<=j){
-   if(str.charAt(i)!=str.charAt(j)){
-	   message = false;
-   }
-	  j--;
-	  i++;
-  }
-	return message;
+	let S=str.split(" ").join("");
+let s=str.split(" ").join("").split("").reverse().join("");
+	if(S==s){
+		return true;
+	}
+	else{
+		return false;
+	}
 }
 module.exports = palindrome
